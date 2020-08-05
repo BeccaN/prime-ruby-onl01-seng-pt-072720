@@ -4,7 +4,7 @@ def prime?(num)
   elsif num == 2
     return true 
   elsif num > 2 
-    if (2..num).find{|n| num % n == 0}
+    if (2..(num - 1)).find{|n| num % n == 0}
       return false
     else
       return true 
