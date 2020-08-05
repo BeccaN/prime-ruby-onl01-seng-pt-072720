@@ -4,13 +4,10 @@ def prime?(num)
   elsif num == 2
     return true 
   elsif num > 2 
-    if 
-  
-  while num > 2 
-    if 
-      false
+    if (2..num).find{|n| num % n == 0}
+      return false
     else
-      true
+      return true 
     end
   end 
 end 
